@@ -166,3 +166,44 @@ footer {
     width: 90%;
   }
 }
+
+/* Sección de inscripción centrada */
+.inscripcion-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Centra horizontalmente */
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f7ff; /* Fondo suave opcional */
+}
+
+/* Botón de inscripción (diseño alegre y centrado) */
+.boton-inscripcion {
+  display: inline-block;
+  background-color: #ff595e;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgb(221, 63, 169);
+}
+
+.boton-inscripcion:hover {
+  background-color: #ff2e4d;
+  transform: scale(1.05);
+}
+
+/* Responsive: botón más ancho en móvil */
+@media (max-width: 768px) {
+  .boton-inscripcion {
+    width: 90%;
+    font-size: 16px;
+  }
+}
